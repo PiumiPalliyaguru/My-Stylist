@@ -1,0 +1,228 @@
+<!doctype html>
+
+
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <title> home page</title>
+
+
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+
+
+
+</head>
+
+<body>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Stylist</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/search">Search stylist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h4 class="display-4">Are you looking for a
+        Stylist or Educator
+      </h4>
+      <h4 class="display-4">Here they are..</h4>
+      <p class="lead"></p>
+
+    </header>
+
+
+    <!--home image-->
+    <div class="jumbotron">
+      <div id="home-image">
+
+        <h1 id="home-title"> My Stylist </h1>
+      </div>
+    </div>
+    </br>
+    </br>
+    </br>
+
+    <!-- second Container () -->
+    <div class="jumbotron">
+
+      <form name="searchform" method="POST" action="/search" class="form-inline">
+        <div class="container bg-3 text-center">
+          </br>
+          <h3 class="margin">Search here...</h3>
+          <br>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="dropdown">
+                <h4>Select Service Type</h4>
+                <select id="select" name="type" width="3cm">
+                   <option value=""></option>
+                  <option value="Educator">Educator</option>
+                  <option value="Stylist">Stylist</option>
+             
+                  
+
+
+                </select>
+              </div>
+
+            </div>
+            <div class="col-sm-4">
+              <div class="dropdown">
+                <h4>Location</h4>
+                <select id="select" name="location">
+                  <option value=""></option>
+                  <option value="Colombo">Colombo</option>
+                  <option value="Kandy">Kandy</option>
+                  <option value="Galle">Galle</option>
+                  <option value="Matara">Matara</option>
+                  <option value="Kegalle">Kegalle</option>
+                
+                  
+                  
+                </select>
+              </div>
+
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-primary" type="submit" style="background:rgba(66, 65, 65, 0.733)">Search</button>
+
+            </div>
+          </div>
+          </br>
+          </br>
+        </div>
+
+      </form>
+      </br>
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="container-content">
+
+      <!-- Introduction Row -->
+      <h1 class="my-4">About our community..
+        <small></small>
+      </h1>
+      <p></p>
+
+      <!-- Team Members Row -->
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="my-4"></h2>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle" src="Images/ProfileImage/1.jpg" alt="" height="300" width="300">
+            <h3>Shan Gunasekara</h3>
+            <h3> <small>Educator</small></h3> 
+            <form action="/profile/1" method="GET" name="{{this.id}}">
+            <a href="/profile/1" style="background:black">View Profile</a>
+            </form>
+            
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle" src="Images/ProfileImage/2.jpg" alt="" height="300" width="300">
+            <h3>Kumudu Pathirana</h3>
+            <h3> <small>Stylist</small></h3> 
+            <form action="/profile/2" method="GET" name="{{this.id}}">
+            <a href="/profile/2" style="background:black">View Profile</a>
+            </form>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle" src="Images/ProfileImage/3.jpg" alt="" height="300" width="300">
+            <h3>Sahan De Siva</h3>
+            <h3> <small>Stylist</small></h3> 
+            <form action="/profile/3" method="GET" name="{{this.id}}">
+            <a href="/profile/3" style="background:black">View Profile</a>
+            </form>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle" src="Images/ProfileImage/4.jpg" alt="" height="300" width="300">
+            <h3>Anna Robin</h3>
+            <h3> <small>Educator</small></h3> 
+            <form action="/profile/4" method="GET" name="{{this.id}}">
+            <a href="/profile/4" style="background:black">View Profile</a>
+            </form>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle" src="Images/ProfileImage/5.jpg" alt="" height="300" width="300">
+            <h3>Riki Shen</h3>
+            <h3> <small>Educator</small></h3> 
+            <form action="/profile/5" method="GET" name="{{this.id}}">
+            <a href="/profile/5" style="background:black">View Profile</a>
+            </form>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle" src="Images/ProfileImage/6.jpg" alt="" height="300" width="300">
+            <h3>Hiru Shani</h3>
+            <h3> <small>Stylist</small></h3> 
+            <form action="/profile/6" method="GET" name="{{this.id}}">
+            <a href="/profile/6" style="background:black">View Profile</a>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- /.container -->
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

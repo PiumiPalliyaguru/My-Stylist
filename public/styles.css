@@ -1,0 +1,177 @@
+
+
+.bg-2 { 
+	background-color: #312c32; /* Dark Blue */
+	color: #ffffff;
+}
+
+/* --------------------------
+General Styles 
+----------------------------- */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color:black;
+}
+
+.content-padding {
+	padding-left: 11%;
+	padding-right: 11%;
+}
+
+/* --------------------------
+nav bar Styles 
+----------------------------- */
+
+
+
+
+#home-image {
+	height: 550px;
+	width: 100%;
+	background-color: #444;
+	background-image: url('/images/design/17.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+
+}
+
+#home-image::before {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.15);
+	content: "";
+}
+
+#home-image #home-title {
+	position: absolute;
+	background-color:rgb(180, 175, 175);
+	padding: 15px 30px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  bottom: 0;
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.50em;
+  letter-spacing: 0.5px;
+}
+
+.form-group{
+	background-color: #648596;
+}
+.type{
+	width: 20px;
+	height: 10px;
+}
+
+.container-fluid{
+	background-color: #79aac3;
+}
+
+.container-fluid{
+	background-color:  gray;
+}
+
+.container-fluid-3{
+	background-color: #6a94a8;
+}
+
+.container{
+	background-color: #59798a;
+
+}
+.container-nav{
+	background-color:grey;
+
+}
+
+.container-home{
+	background-color:transparent;
+
+}
+
+.container-content{
+	background-color:whitesmoke;
+
+}
+
+.text-dark{
+	color: hsl(0, 0%, 3%);
+}
+
+.search{
+	
+	background-color:#71a1b9;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+
+	
+}
+
+
+.navbar{
+	background-color: hsl(0, 2%, 19%);
+
+}
+
+.btn{
+	position: relative;
+}
+
+.navbar{
+	color: hsl(0, 2%, 19%);
+
+}
+
+.navbar-fixed-top {
+	position: absolute;
+	padding-top: 10px;
+}
+
+
+.navbar-nav li a {
+	color: rgb(134, 131, 131);
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+	font-size: 12px;
+}
+.navbar-log{
+	color: hsl(0, 26%, 95%);
+	font-style: oblique;	
+	bottom: 0;
+	margin: 0px;
+	font-weight: 200;
+	font-size: 1.80em;
+}	
+
+.stylist {
+	width: 30%;
+	margin-right: 4%;
+	display: inline-block;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+

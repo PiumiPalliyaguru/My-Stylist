@@ -1,0 +1,25 @@
+{
+  "name": "mystylist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-init": "/node_modules/jasmine/bin/jasmine.js init",
+    "test": "/node_modules/jasmine/bin/jasmine.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "html": "^1.0.0",
+    "mysql2": "^1.6.4",
+    "nodemon": "^1.18.7",
+    "sequelize": "^4.41.2"
+  },
+  "devDependencies": {
+    "jasmine": "^3.3.1"
+  }
+}
